@@ -1,2 +1,2 @@
-# homebrew-kbom
-A homebrew tap for ksoclabs/kbom
+# homebrew
+A homebrew tap for RAD Security tools
