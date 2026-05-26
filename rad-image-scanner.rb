@@ -5,21 +5,21 @@
 class RadImageScanner < Formula
   desc "Container image vulnerability scanner — wraps Grype with RAD Security enrichment"
   homepage "https://github.com/rad-security/image-scanner"
-  version "0.0.3"
+  version "0.0.4"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/rad-security/image-scanner/releases/download/v0.0.3/rad-image-scanner_0.0.3_darwin_amd64.tar.gz"
-      sha256 "9a10b1b29ff41f4c93d2b4fcb48db60a7c86a13a0304ba6b7903495608282167"
+      url "https://github.com/rad-security/image-scanner/releases/download/v0.0.4/rad-image-scanner_0.0.4_darwin_amd64.tar.gz"
+      sha256 "b24973500b7ca553898dd93d1668485eef278c18c820861f710fa0b6cdb8b933"
 
       def install
         bin.install "rad-image-scanner"
       end
     end
     on_arm do
-      url "https://github.com/rad-security/image-scanner/releases/download/v0.0.3/rad-image-scanner_0.0.3_darwin_arm64.tar.gz"
-      sha256 "8a5d0cedfb034214c14c27731531c1cd1a7d407818252fde1daa9228f3ef688f"
+      url "https://github.com/rad-security/image-scanner/releases/download/v0.0.4/rad-image-scanner_0.0.4_darwin_arm64.tar.gz"
+      sha256 "2565aa1eaeab42fa349b5a4f25fc644456c69cac4ba874ba5e259faa7cf8144a"
 
       def install
         bin.install "rad-image-scanner"
@@ -30,8 +30,8 @@ class RadImageScanner < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rad-security/image-scanner/releases/download/v0.0.3/rad-image-scanner_0.0.3_linux_amd64.tar.gz"
-        sha256 "965281afe7668094a82badeed2c7d33c01cc37a766cb338bc63b73dfe0d812d0"
+        url "https://github.com/rad-security/image-scanner/releases/download/v0.0.4/rad-image-scanner_0.0.4_linux_amd64.tar.gz"
+        sha256 "9e6068ec1c7289847b4449a8f4ba814dc2cac95a3f44b6dd3e38c7df15f27790"
 
         def install
           bin.install "rad-image-scanner"
@@ -40,8 +40,8 @@ class RadImageScanner < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rad-security/image-scanner/releases/download/v0.0.3/rad-image-scanner_0.0.3_linux_arm64.tar.gz"
-        sha256 "48652f028fd5553750cd4c54ac7b58a5979f0095cb4aa553a059814035156b74"
+        url "https://github.com/rad-security/image-scanner/releases/download/v0.0.4/rad-image-scanner_0.0.4_linux_arm64.tar.gz"
+        sha256 "b3634ab40b8070afe02823fb0db90f22e5c18bb88ac6eac45c23af9de5becc62"
 
         def install
           bin.install "rad-image-scanner"
